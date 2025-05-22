@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	
+	<!-- 클래스에 접근하려고 하는 경로를 별칭으로 지어서 쓰기위해서 -->
+	<typeAliases>
+	</typeAliases>
+
+	<environments default="oracle">
+		<environment id="oracle">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.OracleDriver" />
+				<property name="url"
+					value="jdbc:oracle:thin:@localhost:1521:XE" />
+				<property name="username" value="scott" />
+				<property name="password" value="1234" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- SQL을 정의하고 Java 코드와 연결하는 역할, 
+	즉, SQL 쿼리를 XML 파일에 작성하거나, Java 인터페이스에 매핑하여 DB와 연동하는 기능을 제공합니다. -->
+	<mappers>
+	<mapper resource="com/app/mybatis/mapper/memberMapper.xml"/>
+	</mappers>
+
+
+
+</configuration>
