@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.dependency.injection.FoodTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-27T05:36:46" hostname="ICLASS" time="1.069">
+  <properties/>
+  <testcase name="knifeTest()" classname="com.app.dependency.injection.FoodTests" time="1.069"/>
+  <system-out><![CDATA[14:36:44.989 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.dependency.injection.FoodTests]: FoodTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:36:45.125 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.dependency.DependencyApplication for test class com.app.dependency.injection.FoodTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-02-27T14:36:45.563+09:00  INFO 23000 --- [    Test worker] com.app.dependency.injection.FoodTests   : Starting FoodTests using Java 17.0.10 with PID 23000 (started by Admin in D:\gb_0900_hds\spring\workspace\dependency)
+2025-02-27T14:36:45.566+09:00  INFO 23000 --- [    Test worker] com.app.dependency.injection.FoodTests   : No active profile set, falling back to 1 default profile: "default"
+2025-02-27T14:36:46.272+09:00  WARN 23000 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-02-27T14:36:46.299+09:00  INFO 23000 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-02-27T14:36:46.846+09:00  INFO 23000 --- [    Test worker] com.app.dependency.injection.FoodTests   : Started FoodTests in 1.571 seconds (process running for 2.789)
+2025-02-27T14:36:47.920+09:00  INFO 23000 --- [    Test worker] com.app.dependency.injection.FoodTests   : knife: com.app.dependency.injection.Knife@1bfa3893
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
